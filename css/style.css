@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #d6ddff;
+}
+/* header */
+header {
+    background: linear-gradient(to left, #74ebd5, #acb6e5, #4696bb);
+    text-align: center;
+    color: #f5f5f5;
+}
+header .jumbotron {
+    padding: 30px 0;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+header a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+a:hover {
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 20px;
+    box-shadow: -2px -1px 1px #4696bbb1;
+    position: sticky;
+}
+nav ul li {
+    list-style-type: none;
+}
+/* main */
+article, aside {
+    margin: 20px;
+    padding: 15px 30px;
+    box-shadow: 0.5px 1px 2px #404142;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+article p {
+    text-align: justify;
+}
+.member {
+    display: flex;
+    gap: 2rem;
+}
+.member-card p {
+    text-align: center;
+    line-height: 7.5px;
+}
+.member-card:hover {
+    width: 102%;
+}
+.name {
+    font-weight: bold;
+}
+.member-role {
+    color: #404142;
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about {
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+    gap: 1rem;
+}
+.about-txt, aside {
+    margin: 0;
+    flex: 5;
+}
+aside {
+    flex: 1;
+    text-align: center;
+}
+aside p {
+    text-align: center;
+}
+aside i {
+    color: #37738f;
+    font-size: 25px;
+    margin-right: 10px;
+}
+/* footer */
+footer {
+    margin: 30px 0;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: #37738f;
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    aside {
+        flex: 2;
+    }
+  }
+/* mobile */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+    .member, .about {
+        flex-direction: column;
+    }
+}
